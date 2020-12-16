@@ -1,0 +1,5411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigurationData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>110224</Version>
+  <ControllerConfig>
+    <IpAddress>192.168.2.3</IpAddress>
+    <Port>1206</Port>
+    <PendantVariable>@GlobalVariables.HostData</PendantVariable>
+    <MachineVariable>@GlobalVariables.MyMachine</MachineVariable>
+    <ToolVariable>@GlobalVariables.Tool</ToolVariable>
+    <Priority2UpdateRate>250</Priority2UpdateRate>
+    <Priority3UpdateRate>1000</Priority3UpdateRate>
+  </ControllerConfig>
+  <DisplayConfig>
+    <Rows>
+      <double>42</double>
+      <double>26</double>
+      <double>32</double>
+    </Rows>
+    <Columns>
+      <double>100</double>
+    </Columns>
+    <HorizontalSpacing>1</HorizontalSpacing>
+    <VerticalSpacing>1</VerticalSpacing>
+    <ManualZones>
+      <ZoneData>
+        <Contents>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.GridPanel</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>true</Stretch>
+            <GridConfigData>
+              <Title />
+              <RowCount>1</RowCount>
+              <ColumnCount>1</ColumnCount>
+              <Contents>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>GearboxLogo</Tag>
+                  <Row>0</Row>
+                  <Col>0</Col>
+                </CellData>
+              </Contents>
+              <Spacing>
+                <X>0</X>
+                <Y>0</Y>
+              </Spacing>
+            </GridConfigData>
+          </PluginData>
+        </Contents>
+        <Row>0</Row>
+        <Col>0</Col>
+      </ZoneData>
+      <ZoneData>
+        <Contents>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.GridPanel</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>false</Stretch>
+            <GridConfigData>
+              <Title>             Left Hotend                              Right Hotend                              Chamber</Title>
+              <RowCount>2</RowCount>
+              <ColumnCount>3</ColumnCount>
+              <Contents>
+                <CellData>
+                  <Type>Analog Scale Indicator</Type>
+                  <Tag>LeftHotend_E0_Actual</Tag>
+                  <Row>0</Row>
+                  <Col>0</Col>
+                </CellData>
+                <CellData>
+                  <Type>Analog Scale Indicator</Type>
+                  <Tag>RightHotend_E1_Actual</Tag>
+                  <Row>0</Row>
+                  <Col>1</Col>
+                </CellData>
+                <CellData>
+                  <Type>Analog Scale Indicator</Type>
+                  <Tag>ChamberTempActual</Tag>
+                  <Row>0</Row>
+                  <Col>2</Col>
+                </CellData>
+                <CellData>
+                  <Type>Analog Scale Indicator</Type>
+                  <Tag>LeftHotendSetPoint</Tag>
+                  <Row>1</Row>
+                  <Col>0</Col>
+                </CellData>
+                <CellData>
+                  <Type>Analog Scale Indicator</Type>
+                  <Tag>RightHotend_E1_SetPoint</Tag>
+                  <Row>1</Row>
+                  <Col>1</Col>
+                </CellData>
+                <CellData>
+                  <Type>Analog Scale Indicator</Type>
+                  <Tag>ChamberTempSetPoint</Tag>
+                  <Row>1</Row>
+                  <Col>2</Col>
+                </CellData>
+              </Contents>
+              <Spacing>
+                <X>0</X>
+                <Y>0</Y>
+              </Spacing>
+            </GridConfigData>
+          </PluginData>
+        </Contents>
+        <Row>1</Row>
+        <Col>0</Col>
+      </ZoneData>
+      <ZoneData>
+        <Contents>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.GridPanel</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>false</Stretch>
+            <GridConfigData>
+              <Title />
+              <RowCount>2</RowCount>
+              <ColumnCount>2</ColumnCount>
+              <Contents>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>Print Menu</Tag>
+                  <Row>0</Row>
+                  <Col>0</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>Motion</Tag>
+                  <Row>0</Row>
+                  <Col>1</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>Material Status</Tag>
+                  <Row>1</Row>
+                  <Col>0</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>Control</Tag>
+                  <Row>1</Row>
+                  <Col>1</Col>
+                </CellData>
+              </Contents>
+              <Spacing>
+                <X>0</X>
+                <Y>0</Y>
+              </Spacing>
+            </GridConfigData>
+          </PluginData>
+        </Contents>
+        <Row>2</Row>
+        <Col>0</Col>
+      </ZoneData>
+      <ZoneData>
+        <Contents />
+        <Row>3</Row>
+        <Col>0</Col>
+      </ZoneData>
+    </ManualZones>
+    <AutoZones>
+      <ZoneData>
+        <Contents>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.PositionMonitorMinimalist</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>false</Stretch>
+            <PositionMonitorMinimalistConfigData>
+              <Title />
+              <ShowTitleBar>false</ShowTitleBar>
+              <RowData>
+                <Row>
+                  <RowData>
+                    <Use>true</Use>
+                    <Units>0</Units>
+                    <AxisNumber>0</AxisNumber>
+                  </RowData>
+                  <RowData>
+                    <Use>true</Use>
+                    <Units>0</Units>
+                    <AxisNumber>1</AxisNumber>
+                  </RowData>
+                  <RowData>
+                    <Use>true</Use>
+                    <Units>0</Units>
+                    <AxisNumber>2</AxisNumber>
+                  </RowData>
+                  <RowData>
+                    <Use>true</Use>
+                    <Units>0</Units>
+                    <AxisNumber>6</AxisNumber>
+                  </RowData>
+                  <RowData>
+                    <Use>true</Use>
+                    <Units>0</Units>
+                    <AxisNumber>7</AxisNumber>
+                  </RowData>
+                </Row>
+              </RowData>
+              <TwoColumns>true</TwoColumns>
+              <LeftColumnDisplay>modeMachine</LeftColumnDisplay>
+              <RightColumnDisplay>modeToGo</RightColumnDisplay>
+            </PositionMonitorMinimalistConfigData>
+          </PluginData>
+        </Contents>
+        <Row>0</Row>
+        <Col>0</Col>
+      </ZoneData>
+      <ZoneData>
+        <Contents>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.GridPanel</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>false</Stretch>
+            <GridConfigData>
+              <Title>Left Hotend     Right Hotend     Chamber        Left Drawer     Right Drawer </Title>
+              <RowCount>1</RowCount>
+              <ColumnCount>5</ColumnCount>
+              <Contents>
+                <CellData>
+                  <Type>Analog Scale Indicator</Type>
+                  <Tag>LeftHotend_E0_Actual</Tag>
+                  <Row>0</Row>
+                  <Col>0</Col>
+                </CellData>
+                <CellData>
+                  <Type>Analog Scale Indicator</Type>
+                  <Tag>RightHotend_E1_Actual</Tag>
+                  <Row>0</Row>
+                  <Col>1</Col>
+                </CellData>
+                <CellData>
+                  <Type>Analog Scale Indicator</Type>
+                  <Tag>ChamberTempActual</Tag>
+                  <Row>0</Row>
+                  <Col>2</Col>
+                </CellData>
+                <CellData>
+                  <Type>Analog Scale Indicator</Type>
+                  <Tag>DrawerOneTemp_Actual</Tag>
+                  <Row>0</Row>
+                  <Col>3</Col>
+                </CellData>
+                <CellData>
+                  <Type>Analog Scale Indicator</Type>
+                  <Tag>DrawerTwoTemp_Actual</Tag>
+                  <Row>0</Row>
+                  <Col>4</Col>
+                </CellData>
+              </Contents>
+              <Spacing>
+                <X>0</X>
+                <Y>0</Y>
+              </Spacing>
+            </GridConfigData>
+          </PluginData>
+        </Contents>
+        <Row>1</Row>
+        <Col>0</Col>
+      </ZoneData>
+      <ZoneData>
+        <Contents>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.GridPanel</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>false</Stretch>
+            <GridConfigData>
+              <Title />
+              <RowCount>2</RowCount>
+              <ColumnCount>2</ColumnCount>
+              <Contents>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>Pause (Feed Hold)</Tag>
+                  <Row>0</Row>
+                  <Col>0</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>Reset</Tag>
+                  <Row>1</Row>
+                  <Col>0</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>ServoEnable</Tag>
+                  <Row>0</Row>
+                  <Col>1</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>Print (CycleStart)</Tag>
+                  <Row>1</Row>
+                  <Col>1</Col>
+                </CellData>
+              </Contents>
+              <Spacing>
+                <X>0</X>
+                <Y>0</Y>
+              </Spacing>
+            </GridConfigData>
+          </PluginData>
+        </Contents>
+        <Row>2</Row>
+        <Col>0</Col>
+      </ZoneData>
+    </AutoZones>
+    <MDIZones>
+      <ZoneData>
+        <Contents>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.MdiPanel</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>false</Stretch>
+            <Object />
+          </PluginData>
+        </Contents>
+        <Row>0</Row>
+        <Col>0</Col>
+      </ZoneData>
+      <ZoneData>
+        <Contents>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.GridPanel</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>false</Stretch>
+            <GridConfigData>
+              <Title />
+              <RowCount>1</RowCount>
+              <ColumnCount>3</ColumnCount>
+              <Contents>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>Select Button</Tag>
+                  <Row>0</Row>
+                  <Col>0</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>JogLaunch</Tag>
+                  <Row>0</Row>
+                  <Col>1</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>PositionLaunch</Tag>
+                  <Row>0</Row>
+                  <Col>2</Col>
+                </CellData>
+              </Contents>
+              <Spacing>
+                <X>0</X>
+                <Y>0</Y>
+              </Spacing>
+            </GridConfigData>
+          </PluginData>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.JogPanel</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>false</Stretch>
+            <JogHomePanelConfigData>
+              <Title>Jog/Home Panel</Title>
+              <HideTitle>false</HideTitle>
+              <Rows>0</Rows>
+              <Columns>0</Columns>
+              <Spacing>
+                <X>0</X>
+                <Y>0</Y>
+              </Spacing>
+              <Buttons />
+            </JogHomePanelConfigData>
+          </PluginData>
+        </Contents>
+        <Row>1</Row>
+        <Col>0</Col>
+      </ZoneData>
+      <ZoneData>
+        <Contents>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.GridPanel</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>false</Stretch>
+            <GridConfigData>
+              <Title />
+              <RowCount>2</RowCount>
+              <ColumnCount>2</ColumnCount>
+              <Contents>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>PrintMenu</Tag>
+                  <Row>0</Row>
+                  <Col>0</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>PrintMenu</Tag>
+                  <Row>1</Row>
+                  <Col>0</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>PrintMenu</Tag>
+                  <Row>0</Row>
+                  <Col>1</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>PrintMenu</Tag>
+                  <Row>1</Row>
+                  <Col>1</Col>
+                </CellData>
+              </Contents>
+              <Spacing>
+                <X>0</X>
+                <Y>0</Y>
+              </Spacing>
+            </GridConfigData>
+          </PluginData>
+        </Contents>
+        <Row>2</Row>
+        <Col>0</Col>
+      </ZoneData>
+    </MDIZones>
+    <EditZones />
+    <FloatingZones>
+      <FloatingZoneData>
+        <Identifier>JogPanel</Identifier>
+        <Contents>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.JogPanel</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>true</Stretch>
+            <JogHomePanelConfigData>
+              <Title>Jog/Home Panel</Title>
+              <HideTitle>true</HideTitle>
+              <Rows>3</Rows>
+              <Columns>4</Columns>
+              <Spacing>
+                <X>0</X>
+                <Y>0</Y>
+              </Spacing>
+              <Buttons>
+                <PendantButtonData>
+                  <Row>0</Row>
+                  <Column>0</Column>
+                  <AxisId>12</AxisId>
+                  <Home>false</Home>
+                  <HideText>true</HideText>
+                  <DisplayText />
+                  <ImagePath>C:\ProgramData\Yaskawa\Compass\Config\Images\Browser\Extruder_White_Retract.png</ImagePath>
+                  <TextLocation>None</TextLocation>
+                  <ImageLocation>Center</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>1</Row>
+                  <Column>0</Column>
+                  <AxisId>13</AxisId>
+                  <Home>false</Home>
+                  <HideText>false</HideText>
+                  <DisplayText />
+                  <ImagePath>C:\ProgramData\Yaskawa\Compass\Config\Images\Browser\Extruder_White_Extrude.png</ImagePath>
+                  <TextLocation>Center</TextLocation>
+                  <ImageLocation>Center</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>0</Row>
+                  <Column>1</Column>
+                  <AxisId>0</AxisId>
+                  <Home>true</Home>
+                  <HideText>true</HideText>
+                  <DisplayText>All</DisplayText>
+                  <ImagePath>C:\ProgramData\Yaskawa\Compass\Config\Images\Browser\Home_Red_All.png</ImagePath>
+                  <TextLocation>None</TextLocation>
+                  <ImageLocation>Center</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>1</Row>
+                  <Column>1</Column>
+                  <AxisId>2</AxisId>
+                  <Home>true</Home>
+                  <HideText>true</HideText>
+                  <DisplayText />
+                  <ImagePath>/YCompass;component/Resources/HomeY.png</ImagePath>
+                  <TextLocation>None</TextLocation>
+                  <ImageLocation>Center</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>0</Row>
+                  <Column>2</Column>
+                  <AxisId>1</AxisId>
+                  <Home>true</Home>
+                  <HideText>true</HideText>
+                  <DisplayText />
+                  <ImagePath>/YCompass;component/Resources/HomeX.png</ImagePath>
+                  <TextLocation>None</TextLocation>
+                  <ImageLocation>Center</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>1</Row>
+                  <Column>2</Column>
+                  <AxisId>3</AxisId>
+                  <Home>true</Home>
+                  <HideText>true</HideText>
+                  <DisplayText />
+                  <ImagePath>/YCompass;component/Resources/HomeZ.png</ImagePath>
+                  <TextLocation>None</TextLocation>
+                  <ImageLocation>Center</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>0</Row>
+                  <Column>3</Column>
+                  <AxisId>14</AxisId>
+                  <Home>false</Home>
+                  <HideText>false</HideText>
+                  <ImagePath>C:\ProgramData\Yaskawa\Compass\Config\Images\Browser\Extruder_Red_Retract.png</ImagePath>
+                  <TextLocation>Center</TextLocation>
+                  <ImageLocation>Center</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>1</Row>
+                  <Column>3</Column>
+                  <AxisId>15</AxisId>
+                  <Home>false</Home>
+                  <HideText>false</HideText>
+                  <ImagePath>C:\ProgramData\Yaskawa\Compass\Config\Images\Browser\Extruder_Red_Extrude.png</ImagePath>
+                  <TextLocation>Center</TextLocation>
+                  <ImageLocation>Center</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>-1</Row>
+                  <Column>-1</Column>
+                  <AxisId>1</AxisId>
+                  <Home>true</Home>
+                  <HideText>false</HideText>
+                  <ImagePath>/YCompass;component/Resources/HomeX.png</ImagePath>
+                  <TextLocation>Center</TextLocation>
+                  <ImageLocation>Center</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>-1</Row>
+                  <Column>-1</Column>
+                  <AxisId>0</AxisId>
+                  <Home>true</Home>
+                  <HideText>true</HideText>
+                  <ImagePath>/YCompass;component/Resources/HomeY.png</ImagePath>
+                  <TextLocation>None</TextLocation>
+                  <ImageLocation>Center</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>-1</Row>
+                  <Column>-1</Column>
+                  <AxisId>3</AxisId>
+                  <Home>true</Home>
+                  <HideText>false</HideText>
+                  <ImagePath>/YCompass;component/Resources/HomeZ.png</ImagePath>
+                  <TextLocation>Center</TextLocation>
+                  <ImageLocation>Center</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>-1</Row>
+                  <Column>-1</Column>
+                  <AxisId>0</AxisId>
+                  <Home>true</Home>
+                  <HideText>false</HideText>
+                  <ImagePath>C:\ProgramData\Yaskawa\Compass\Config\Images\Browser\Home_Red_All.png</ImagePath>
+                  <TextLocation>Center</TextLocation>
+                  <ImageLocation>Center</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>2</Row>
+                  <Column>0</Column>
+                  <AxisId>4</AxisId>
+                  <Home>false</Home>
+                  <HideText>false</HideText>
+                  <DisplayText> Z-</DisplayText>
+                  <ImagePath>/YCompass;component/Resources/Arrow-NW.png</ImagePath>
+                  <TextLocation>Right</TextLocation>
+                  <ImageLocation>Left</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>2</Row>
+                  <Column>1</Column>
+                  <AxisId>5</AxisId>
+                  <Home>false</Home>
+                  <HideText>false</HideText>
+                  <DisplayText>Z+</DisplayText>
+                  <ImagePath>/YCompass;component/Resources/Arrow-SE.png</ImagePath>
+                  <TextLocation>Right</TextLocation>
+                  <ImageLocation>Left</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>2</Row>
+                  <Column>2</Column>
+                  <AxisId>3</AxisId>
+                  <Home>false</Home>
+                  <HideText>false</HideText>
+                  <DisplayText>Y+</DisplayText>
+                  <ImagePath>/YCompass;component/Resources/Arrow-N.png</ImagePath>
+                  <TextLocation>Right</TextLocation>
+                  <ImageLocation>Left</ImageLocation>
+                </PendantButtonData>
+                <PendantButtonData>
+                  <Row>2</Row>
+                  <Column>3</Column>
+                  <AxisId>2</AxisId>
+                  <Home>false</Home>
+                  <HideText>false</HideText>
+                  <DisplayText> Y-</DisplayText>
+                  <ImagePath>/YCompass;component/Resources/Arrow-S.png</ImagePath>
+                  <TextLocation>Right</TextLocation>
+                  <ImageLocation>Left</ImageLocation>
+                </PendantButtonData>
+              </Buttons>
+            </JogHomePanelConfigData>
+          </PluginData>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.JogSpeedAndIncrement</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>false</Stretch>
+            <JogSpeedIncComboConfigData>
+              <Title>Jog Speed and Increment</Title>
+              <ShowTitleBar>false</ShowTitleBar>
+              <ShowTitleInline>false</ShowTitleInline>
+              <Speed>
+                <Title>Jog Speed</Title>
+                <ShowTitleBar>false</ShowTitleBar>
+                <ShowTitleInline>true</ShowTitleInline>
+                <Buttons>
+                  <JogSpeedButton>
+                    <Hidden>false</Hidden>
+                    <Label>Creep</Label>
+                    <ShowLinearValue>false</ShowLinearValue>
+                    <ShowRotaryValue>false</ShowRotaryValue>
+                    <JogSpeedIndex>0</JogSpeedIndex>
+                    <Speeds>
+                      <Imperial>0.05</Imperial>
+                      <Metric>1</Metric>
+                      <Rotary>5</Rotary>
+                    </Speeds>
+                  </JogSpeedButton>
+                  <JogSpeedButton>
+                    <Hidden>false</Hidden>
+                    <Label>Slow</Label>
+                    <ShowLinearValue>false</ShowLinearValue>
+                    <ShowRotaryValue>false</ShowRotaryValue>
+                    <JogSpeedIndex>1</JogSpeedIndex>
+                    <Speeds>
+                      <Imperial>0.25</Imperial>
+                      <Metric>5</Metric>
+                      <Rotary>10</Rotary>
+                    </Speeds>
+                  </JogSpeedButton>
+                  <JogSpeedButton>
+                    <Hidden>false</Hidden>
+                    <Label>Medium</Label>
+                    <ShowLinearValue>false</ShowLinearValue>
+                    <ShowRotaryValue>false</ShowRotaryValue>
+                    <JogSpeedIndex>2</JogSpeedIndex>
+                    <Speeds>
+                      <Imperial>0.5</Imperial>
+                      <Metric>10</Metric>
+                      <Rotary>25</Rotary>
+                    </Speeds>
+                  </JogSpeedButton>
+                  <JogSpeedButton>
+                    <Hidden>false</Hidden>
+                    <Label>Fast</Label>
+                    <ShowLinearValue>false</ShowLinearValue>
+                    <ShowRotaryValue>false</ShowRotaryValue>
+                    <JogSpeedIndex>3</JogSpeedIndex>
+                    <Speeds>
+                      <Imperial>1</Imperial>
+                      <Metric>20</Metric>
+                      <Rotary>50</Rotary>
+                    </Speeds>
+                  </JogSpeedButton>
+                </Buttons>
+                <SpeedSetsMode>true</SpeedSetsMode>
+              </Speed>
+              <Increment>
+                <Title>Jog Increment</Title>
+                <ShowTitleBar>false</ShowTitleBar>
+                <ShowTitleInline>true</ShowTitleInline>
+                <ShowDirectEntry>true</ShowDirectEntry>
+                <ShowBox>false</ShowBox>
+                <ShowInfinite>true</ShowInfinite>
+                <Min>
+                  <Imperial>1E-05</Imperial>
+                  <Metric>1E-05</Metric>
+                  <Rotary>1E-05</Rotary>
+                </Min>
+                <Max>
+                  <Imperial>100000</Imperial>
+                  <Metric>100000</Metric>
+                  <Rotary>100000</Rotary>
+                </Max>
+                <Buttons>
+                  <JogIncrementButton>
+                    <Index>0</Index>
+                    <Hidden>false</Hidden>
+                    <Preset>
+                      <Imperial>1</Imperial>
+                      <Metric>25</Metric>
+                      <Rotary>18</Rotary>
+                    </Preset>
+                  </JogIncrementButton>
+                  <JogIncrementButton>
+                    <Index>1</Index>
+                    <Hidden>false</Hidden>
+                    <Preset>
+                      <Imperial>0.1</Imperial>
+                      <Metric>2.5</Metric>
+                      <Rotary>1.8</Rotary>
+                    </Preset>
+                  </JogIncrementButton>
+                  <JogIncrementButton>
+                    <Index>2</Index>
+                    <Hidden>false</Hidden>
+                    <Preset>
+                      <Imperial>0.01</Imperial>
+                      <Metric>0.25</Metric>
+                      <Rotary>0.18</Rotary>
+                    </Preset>
+                  </JogIncrementButton>
+                  <JogIncrementButton>
+                    <Index>3</Index>
+                    <Hidden>false</Hidden>
+                    <Preset>
+                      <Imperial>0.001</Imperial>
+                      <Metric>0.025</Metric>
+                      <Rotary>0.018</Rotary>
+                    </Preset>
+                  </JogIncrementButton>
+                </Buttons>
+              </Increment>
+              <SpeedSectionFirst>true</SpeedSectionFirst>
+            </JogSpeedIncComboConfigData>
+          </PluginData>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.PositionMonitorLoaded</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>true</Stretch>
+            <PositionMonitorLoadedConfigData>
+              <Title />
+              <ShowTitleBar>false</ShowTitleBar>
+              <RowData>
+                <Row>
+                  <RowData>
+                    <Use>true</Use>
+                    <Units>0</Units>
+                    <AxisNumber>-1</AxisNumber>
+                  </RowData>
+                  <RowData>
+                    <Use>true</Use>
+                    <Units>0</Units>
+                    <AxisNumber>0</AxisNumber>
+                  </RowData>
+                  <RowData>
+                    <Use>true</Use>
+                    <Units>0</Units>
+                    <AxisNumber>1</AxisNumber>
+                  </RowData>
+                  <RowData>
+                    <Use>true</Use>
+                    <Units>0</Units>
+                    <AxisNumber>2</AxisNumber>
+                  </RowData>
+                  <RowData>
+                    <Use>true</Use>
+                    <Units>0</Units>
+                    <AxisNumber>-1</AxisNumber>
+                  </RowData>
+                  <RowData>
+                    <Use>true</Use>
+                    <Units>0</Units>
+                    <AxisNumber>6</AxisNumber>
+                  </RowData>
+                  <RowData>
+                    <Use>true</Use>
+                    <Units>0</Units>
+                    <AxisNumber>7</AxisNumber>
+                  </RowData>
+                </Row>
+              </RowData>
+              <StatusData>
+                <Shape>0</Shape>
+                <Style>0</Style>
+                <ShowLimitIndicators>Off</ShowLimitIndicators>
+                <StatusList>
+                  <SingleStatusData>
+                    <Use>true</Use>
+                    <Indicator>ServoPower</Indicator>
+                    <Variable />
+                    <TrueColor>#FF008000</TrueColor>
+                    <FalseColor>Red</FalseColor>
+                  </SingleStatusData>
+                  <SingleStatusData>
+                    <Use>false</Use>
+                    <Indicator>AtHomePosition</Indicator>
+                    <Variable />
+                    <TrueColor>Green</TrueColor>
+                    <FalseColor>Red</FalseColor>
+                  </SingleStatusData>
+                </StatusList>
+                <LimIndicatorStatusList>
+                  <LimitStatusIndicatorData>
+                    <LimitIndicatorState1>HardwareLimitPositive</LimitIndicatorState1>
+                    <LimitIndicatorState2>HardwareLimitPositive</LimitIndicatorState2>
+                    <StateColors>
+                      <string>green</string>
+                      <string>green</string>
+                    </StateColors>
+                    <VariableNames>
+                      <string />
+                      <string />
+                    </VariableNames>
+                    <DisplayName />
+                  </LimitStatusIndicatorData>
+                  <LimitStatusIndicatorData>
+                    <LimitIndicatorState1>HardwareLimitPositive</LimitIndicatorState1>
+                    <LimitIndicatorState2>HardwareLimitPositive</LimitIndicatorState2>
+                    <StateColors>
+                      <string>green</string>
+                      <string>green</string>
+                    </StateColors>
+                    <VariableNames>
+                      <string />
+                      <string />
+                    </VariableNames>
+                    <DisplayName />
+                  </LimitStatusIndicatorData>
+                </LimIndicatorStatusList>
+              </StatusData>
+              <Mode>0</Mode>
+              <DataColumnData>
+                <Header>Feed Rate</Header>
+                <Display>FeedRate</Display>
+                <Variable />
+                <Precision>0</Precision>
+              </DataColumnData>
+              <StatusBarData>
+                <WorkOffset>true</WorkOffset>
+                <AbsoluteRelative>true</AbsoluteRelative>
+                <FeedRateOverride>true</FeedRateOverride>
+              </StatusBarData>
+            </PositionMonitorLoadedConfigData>
+          </PluginData>
+        </Contents>
+        <DefaultHeight>1280</DefaultHeight>
+        <DefaultWidth>722.5</DefaultWidth>
+        <IncludeClose>true</IncludeClose>
+        <LaunchMaximized>true</LaunchMaximized>
+      </FloatingZoneData>
+      <FloatingZoneData>
+        <Identifier>MaterialPanel</Identifier>
+        <Contents>
+          <PluginData>
+            <Identifier>Gearbox3D_Plugin.LoadOrUnloadUserControl</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>true</Stretch>
+            <Object />
+          </PluginData>
+        </Contents>
+        <DefaultHeight>1280</DefaultHeight>
+        <DefaultWidth>722.5</DefaultWidth>
+        <IncludeClose>true</IncludeClose>
+        <LaunchMaximized>true</LaunchMaximized>
+      </FloatingZoneData>
+      <FloatingZoneData>
+        <Identifier>PrintSetupPanel</Identifier>
+        <Contents>
+          <PluginData>
+            <Identifier>Gearbox3D_Plugin.SendGCodeUserControl</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>true</Stretch>
+            <Object />
+          </PluginData>
+        </Contents>
+        <DefaultHeight>1280</DefaultHeight>
+        <DefaultWidth>722.5</DefaultWidth>
+        <IncludeClose>true</IncludeClose>
+        <LaunchMaximized>true</LaunchMaximized>
+      </FloatingZoneData>
+      <FloatingZoneData>
+        <Identifier>GCodeMDIPanel</Identifier>
+        <Contents>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.ProgramDisplay</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>false</Stretch>
+            <ProgramDisplayConfigData>
+              <LastFilePath />
+              <History />
+              <FileExt />
+            </ProgramDisplayConfigData>
+          </PluginData>
+        </Contents>
+        <DefaultHeight>1280</DefaultHeight>
+        <DefaultWidth>722.5</DefaultWidth>
+        <IncludeClose>true</IncludeClose>
+        <LaunchMaximized>true</LaunchMaximized>
+      </FloatingZoneData>
+      <FloatingZoneData>
+        <Identifier>ControlBarPanel</Identifier>
+        <Contents>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.GridPanel</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>false</Stretch>
+            <GridConfigData>
+              <Title />
+              <RowCount>2</RowCount>
+              <ColumnCount>2</ColumnCount>
+              <Contents>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>ServoEnable</Tag>
+                  <Row>0</Row>
+                  <Col>0</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>Pause (Feed Hold)</Tag>
+                  <Row>1</Row>
+                  <Col>0</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>Print (CycleStart)</Tag>
+                  <Row>0</Row>
+                  <Col>1</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>Reset</Tag>
+                  <Row>1</Row>
+                  <Col>1</Col>
+                </CellData>
+              </Contents>
+              <Spacing>
+                <X>0</X>
+                <Y>0</Y>
+              </Spacing>
+            </GridConfigData>
+          </PluginData>
+        </Contents>
+        <DefaultHeight>1280</DefaultHeight>
+        <DefaultWidth>722.5</DefaultWidth>
+        <IncludeClose>true</IncludeClose>
+        <LaunchMaximized>true</LaunchMaximized>
+      </FloatingZoneData>
+      <FloatingZoneData>
+        <Identifier>MaterialListPanel</Identifier>
+        <Contents>
+          <PluginData>
+            <Identifier>Gearbox3D_Plugin.E0_MaterialList_UserControl</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>true</Stretch>
+            <Object />
+          </PluginData>
+        </Contents>
+        <DefaultHeight>1280</DefaultHeight>
+        <DefaultWidth>722.5</DefaultWidth>
+        <IncludeClose>true</IncludeClose>
+        <LaunchMaximized>true</LaunchMaximized>
+      </FloatingZoneData>
+      <FloatingZoneData>
+        <Identifier>PositionPanel</Identifier>
+        <Contents>
+          <PluginData>
+            <Identifier>YDefaultPlugins.Plugins.GridPanel</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>true</Stretch>
+            <GridConfigData>
+              <Title />
+              <RowCount>2</RowCount>
+              <ColumnCount>1</ColumnCount>
+              <Contents>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>Head</Tag>
+                  <Row>0</Row>
+                  <Col>0</Col>
+                </CellData>
+                <CellData>
+                  <Type>Button</Type>
+                  <Tag>Reserve</Tag>
+                  <Row>1</Row>
+                  <Col>0</Col>
+                </CellData>
+              </Contents>
+              <Spacing>
+                <X>0</X>
+                <Y>5</Y>
+              </Spacing>
+            </GridConfigData>
+          </PluginData>
+        </Contents>
+        <DefaultHeight>1280</DefaultHeight>
+        <DefaultWidth>722.5</DefaultWidth>
+        <IncludeClose>true</IncludeClose>
+        <LaunchMaximized>true</LaunchMaximized>
+      </FloatingZoneData>
+      <FloatingZoneData>
+        <Identifier>MaterialBayPanel</Identifier>
+        <Contents>
+          <PluginData>
+            <Identifier>Gearbox3D_Plugin.MaterialBaySelection</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>true</Stretch>
+            <Object />
+          </PluginData>
+        </Contents>
+        <DefaultHeight>1280</DefaultHeight>
+        <DefaultWidth>722.5</DefaultWidth>
+        <IncludeClose>true</IncludeClose>
+        <LaunchMaximized>true</LaunchMaximized>
+      </FloatingZoneData>
+      <FloatingZoneData>
+        <Identifier>MaterialPanel_</Identifier>
+        <Contents>
+          <PluginData>
+            <Identifier>Gearbox3D_Plugin.LoadOrUnload_E1_UserControl</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>true</Stretch>
+            <Object />
+          </PluginData>
+        </Contents>
+        <DefaultHeight>200</DefaultHeight>
+        <DefaultWidth>200</DefaultWidth>
+        <IncludeClose>true</IncludeClose>
+        <LaunchMaximized>true</LaunchMaximized>
+      </FloatingZoneData>
+      <FloatingZoneData>
+        <Identifier>MaterialListPanel_E1</Identifier>
+        <Contents>
+          <PluginData>
+            <Identifier>Gearbox3D_Plugin.E1_MaterialList_UserControl</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>true</Stretch>
+            <Object />
+          </PluginData>
+        </Contents>
+        <DefaultHeight>200</DefaultHeight>
+        <DefaultWidth>200</DefaultWidth>
+        <IncludeClose>true</IncludeClose>
+        <LaunchMaximized>true</LaunchMaximized>
+      </FloatingZoneData>
+      <FloatingZoneData>
+        <Identifier>PurgePanelE0</Identifier>
+        <Contents>
+          <PluginData>
+            <Identifier>Gearbox3D_Plugin.E0_PurgePanelUserControl</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>true</Stretch>
+            <Object />
+          </PluginData>
+        </Contents>
+        <DefaultHeight>200</DefaultHeight>
+        <DefaultWidth>200</DefaultWidth>
+        <IncludeClose>true</IncludeClose>
+        <LaunchMaximized>true</LaunchMaximized>
+      </FloatingZoneData>
+      <FloatingZoneData>
+        <Identifier>PurgePanelE1</Identifier>
+        <Contents>
+          <PluginData>
+            <Identifier>Gearbox3D_Plugin.E1_PurgePanelUserControl</Identifier>
+            <MaxHeight>100</MaxHeight>
+            <Stretch>true</Stretch>
+            <Object />
+          </PluginData>
+        </Contents>
+        <DefaultHeight>200</DefaultHeight>
+        <DefaultWidth>200</DefaultWidth>
+        <IncludeClose>true</IncludeClose>
+        <LaunchMaximized>true</LaunchMaximized>
+      </FloatingZoneData>
+    </FloatingZones>
+    <SingleInstanceControls>
+      <PluginData>
+        <Identifier>YDefaultPlugins.Plugins.ProgramDisplay</Identifier>
+        <MaxHeight>100</MaxHeight>
+        <Stretch>false</Stretch>
+        <ProgramDisplayConfigData>
+          <LastFilePath>C:\temp\test.GCODE</LastFilePath>
+          <History>
+            <string>C:\temp\test.GCODE</string>
+          </History>
+          <FileExt />
+        </ProgramDisplayConfigData>
+      </PluginData>
+      <PluginData>
+        <Identifier>YDefaultPlugins.Plugins.MdiPanel</Identifier>
+        <MaxHeight>100</MaxHeight>
+        <Stretch>false</Stretch>
+        <MDIPanelConfigData>
+          <ShowTerminal>false</ShowTerminal>
+        </MDIPanelConfigData>
+      </PluginData>
+      <PluginData>
+        <Identifier>YDefaultPlugins.Plugins.PositionMonitorLoaded</Identifier>
+        <MaxHeight>100</MaxHeight>
+        <Stretch>false</Stretch>
+        <PositionMonitorLoadedConfigData>
+          <Title />
+          <ShowTitleBar>false</ShowTitleBar>
+          <RowData>
+            <Row>
+              <RowData>
+                <Use>true</Use>
+                <Units>0</Units>
+                <AxisNumber>-1</AxisNumber>
+              </RowData>
+              <RowData>
+                <Use>true</Use>
+                <Units>0</Units>
+                <AxisNumber>0</AxisNumber>
+              </RowData>
+              <RowData>
+                <Use>true</Use>
+                <Units>0</Units>
+                <AxisNumber>1</AxisNumber>
+              </RowData>
+              <RowData>
+                <Use>true</Use>
+                <Units>0</Units>
+                <AxisNumber>2</AxisNumber>
+              </RowData>
+              <RowData>
+                <Use>true</Use>
+                <Units>0</Units>
+                <AxisNumber>-1</AxisNumber>
+              </RowData>
+              <RowData>
+                <Use>true</Use>
+                <Units>0</Units>
+                <AxisNumber>6</AxisNumber>
+              </RowData>
+              <RowData>
+                <Use>true</Use>
+                <Units>0</Units>
+                <AxisNumber>7</AxisNumber>
+              </RowData>
+            </Row>
+          </RowData>
+          <StatusData>
+            <Shape>0</Shape>
+            <Style>0</Style>
+            <ShowLimitIndicators>Off</ShowLimitIndicators>
+            <StatusList>
+              <SingleStatusData>
+                <Use>true</Use>
+                <Indicator>ServoPower</Indicator>
+                <Variable />
+                <TrueColor>#FF008000</TrueColor>
+                <FalseColor>Red</FalseColor>
+              </SingleStatusData>
+              <SingleStatusData>
+                <Use>false</Use>
+                <Indicator>AtHomePosition</Indicator>
+                <Variable />
+                <TrueColor>Green</TrueColor>
+                <FalseColor>Red</FalseColor>
+              </SingleStatusData>
+            </StatusList>
+            <LimIndicatorStatusList>
+              <LimitStatusIndicatorData>
+                <LimitIndicatorState1>HardwareLimitPositive</LimitIndicatorState1>
+                <LimitIndicatorState2>HardwareLimitPositive</LimitIndicatorState2>
+                <StateColors>
+                  <string>green</string>
+                  <string>green</string>
+                </StateColors>
+                <VariableNames>
+                  <string />
+                  <string />
+                </VariableNames>
+                <DisplayName />
+              </LimitStatusIndicatorData>
+              <LimitStatusIndicatorData>
+                <LimitIndicatorState1>HardwareLimitPositive</LimitIndicatorState1>
+                <LimitIndicatorState2>HardwareLimitPositive</LimitIndicatorState2>
+                <StateColors>
+                  <string>green</string>
+                  <string>green</string>
+                </StateColors>
+                <VariableNames>
+                  <string />
+                  <string />
+                </VariableNames>
+                <DisplayName />
+              </LimitStatusIndicatorData>
+            </LimIndicatorStatusList>
+          </StatusData>
+          <Mode>0</Mode>
+          <DataColumnData>
+            <Header>Feed Rate</Header>
+            <Display>FeedRate</Display>
+            <Variable />
+            <Precision>0</Precision>
+          </DataColumnData>
+          <StatusBarData>
+            <WorkOffset>true</WorkOffset>
+            <AbsoluteRelative>true</AbsoluteRelative>
+            <FeedRateOverride>true</FeedRateOverride>
+          </StatusBarData>
+        </PositionMonitorLoadedConfigData>
+      </PluginData>
+      <PluginData>
+        <Identifier>Yaskawa.PartViewer</Identifier>
+        <MaxHeight>100</MaxHeight>
+        <Stretch>false</Stretch>
+        <TwoDConfiguration>
+          <!--The max number of live drawing segments that will be displayed. Oldest lines will be removed first before adding new lines. Max value = 9000-->
+          <MaxNumSegments>9000</MaxNumSegments>
+          <!--The minimum distance, in millimeters, between points before a live drawing line is created. Min value = .1-->
+          <MinDistanceBetweenLiveDrawPoints>0.1</MinDistanceBetweenLiveDrawPoints>
+          <!--The maximum angle, in degrees, between two sequential lines to be considered unique lines, otherwise if they are less than this angle, then they are combined into one line. Min value = 0.-->
+          <CombineLiveDrawLinesMaxAngle>0.2</CombineLiveDrawLinesMaxAngle>
+          <Title>Part Viewer</Title>
+          <HCLimitsSetup>true</HCLimitsSetup>
+          <HideTitle>false</HideTitle>
+          <GridXMin>-0.5</GridXMin>
+          <GridXMax>565</GridXMax>
+          <GridYMin>-0.5</GridYMin>
+          <GridYMax>473</GridYMax>
+          <HCXMin>-0.5</HCXMin>
+          <HCXMax>565</HCXMax>
+          <HCYMin>-0.5</HCYMin>
+          <HCYMax>473</HCYMax>
+          <GridSpacing>25.4</GridSpacing>
+          <GoLiveOnCycleStart>false</GoLiveOnCycleStart>
+          <BackgroundColor>
+            <A>255</A>
+            <R>255</R>
+            <G>0</G>
+            <B>0</B>
+            <ScA>1</ScA>
+            <ScR>1</ScR>
+            <ScG>0</ScG>
+            <ScB>0</ScB>
+          </BackgroundColor>
+          <GridLinesColor>
+            <A>255</A>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+            <ScA>1</ScA>
+            <ScR>1</ScR>
+            <ScG>1</ScG>
+            <ScB>1</ScB>
+          </GridLinesColor>
+          <LocalZeroColor>
+            <A>255</A>
+            <R>255</R>
+            <G>165</G>
+            <B>0</B>
+            <ScA>1</ScA>
+            <ScR>1</ScR>
+            <ScG>0.376262128</ScG>
+            <ScB>0</ScB>
+          </LocalZeroColor>
+          <RapidColor>
+            <A>255</A>
+            <R>132</R>
+            <G>232</G>
+            <B>134</B>
+            <ScA>1</ScA>
+            <ScR>0.230740055</ScR>
+            <ScG>0.806952238</ScG>
+            <ScB>0.238397568</ScB>
+          </RapidColor>
+          <LinearColor>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>255</B>
+            <ScA>1</ScA>
+            <ScR>0</ScR>
+            <ScG>0</ScG>
+            <ScB>1</ScB>
+          </LinearColor>
+          <CWColor>
+            <A>255</A>
+            <R>200</R>
+            <G>142</G>
+            <B>229</B>
+            <ScA>1</ScA>
+            <ScR>0.577580452</ScR>
+            <ScG>0.2704978</ScG>
+            <ScB>0.7835378</ScB>
+          </CWColor>
+          <CCWColor>
+            <A>255</A>
+            <R>118</R>
+            <G>186</G>
+            <B>234</B>
+            <ScA>1</ScA>
+            <ScR>0.18116425</ScR>
+            <ScG>0.491020858</ScG>
+            <ScB>0.822785735</ScB>
+          </CCWColor>
+          <RapidDashes>true</RapidDashes>
+          <LinearDashes>false</LinearDashes>
+          <CWDashes>false</CWDashes>
+          <CCWDashes>false</CCWDashes>
+          <MachineHCUnits>-1</MachineHCUnits>
+          <ClearPartPreviewOnLiveDrawStart>true</ClearPartPreviewOnLiveDrawStart>
+          <UseMachineLimits>true</UseMachineLimits>
+          <ShowHCLimitsError>false</ShowHCLimitsError>
+        </TwoDConfiguration>
+      </PluginData>
+      <PluginData>
+        <Identifier>YDefaultPlugins.Plugins.PositionMonitorMinimalist</Identifier>
+        <MaxHeight>100</MaxHeight>
+        <Stretch>false</Stretch>
+        <PositionMonitorMinimalistConfigData>
+          <Title />
+          <ShowTitleBar>false</ShowTitleBar>
+          <RowData>
+            <Row>
+              <RowData>
+                <Use>true</Use>
+                <Units>0</Units>
+                <AxisNumber>0</AxisNumber>
+              </RowData>
+              <RowData>
+                <Use>true</Use>
+                <Units>0</Units>
+                <AxisNumber>1</AxisNumber>
+              </RowData>
+              <RowData>
+                <Use>true</Use>
+                <Units>0</Units>
+                <AxisNumber>2</AxisNumber>
+              </RowData>
+              <RowData>
+                <Use>true</Use>
+                <Units>0</Units>
+                <AxisNumber>6</AxisNumber>
+              </RowData>
+              <RowData>
+                <Use>true</Use>
+                <Units>0</Units>
+                <AxisNumber>7</AxisNumber>
+              </RowData>
+            </Row>
+          </RowData>
+          <TwoColumns>true</TwoColumns>
+          <LeftColumnDisplay>modeMachine</LeftColumnDisplay>
+          <RightColumnDisplay>modeToGo</RightColumnDisplay>
+        </PositionMonitorMinimalistConfigData>
+      </PluginData>
+      <PluginData>
+        <Identifier>YDefaultPlugins.Plugins.PositionDisplay</Identifier>
+        <MaxHeight>100</MaxHeight>
+        <Stretch>false</Stretch>
+        <AxisConfigData>
+          <Axis>
+            <AxisData>
+              <Use>true</Use>
+              <Units>0</Units>
+            </AxisData>
+            <AxisData>
+              <Use>true</Use>
+              <Units>0</Units>
+            </AxisData>
+            <AxisData>
+              <Use>true</Use>
+              <Units>0</Units>
+            </AxisData>
+            <AxisData>
+              <Use>true</Use>
+              <Units>0</Units>
+            </AxisData>
+            <AxisData>
+              <Use>true</Use>
+              <Units>0</Units>
+            </AxisData>
+            <AxisData>
+              <Use>true</Use>
+              <Units>0</Units>
+            </AxisData>
+            <AxisData>
+              <Use>true</Use>
+              <Units>0</Units>
+            </AxisData>
+            <AxisData>
+              <Use>true</Use>
+              <Units>0</Units>
+            </AxisData>
+            <AxisData>
+              <Use>true</Use>
+              <Units>0</Units>
+            </AxisData>
+            <AxisData>
+              <Use>true</Use>
+              <Units>0</Units>
+            </AxisData>
+            <AxisData>
+              <Use>true</Use>
+              <Units>0</Units>
+            </AxisData>
+            <AxisData>
+              <Use>true</Use>
+              <Units>0</Units>
+            </AxisData>
+          </Axis>
+        </AxisConfigData>
+      </PluginData>
+    </SingleInstanceControls>
+    <HeaderBar>
+      <Height>0</Height>
+    </HeaderBar>
+    <ControlBar>
+      <Width>1</Width>
+      <ServoPowerButtonImageData />
+      <CycleStartButtonImageData />
+      <FeedHoldButtonImageData />
+      <ResetButtonImageData />
+    </ControlBar>
+    <StatusBar>
+      <Items>
+        <StatusBarItemData>
+          <Location>Center</Location>
+          <Type>EstimatedPercent</Type>
+        </StatusBarItemData>
+        <StatusBarItemData>
+          <Location>Right</Location>
+          <Type>EstimatedTime</Type>
+        </StatusBarItemData>
+      </Items>
+    </StatusBar>
+    <GridControls>
+      <GridControlData xsi:type="StringDisplayConfig">
+        <Name />
+        <Label />
+        <TextColor>Black</TextColor>
+        <TextLocation>Top</TextLocation>
+        <Size>Large</Size>
+        <Method>Preset</Method>
+        <Preset>ActiveToolDescription</Preset>
+        <Argument />
+      </GridControlData>
+      <GridControlData xsi:type="StringDisplayConfig">
+        <Name>Drawer #2</Name>
+        <Label />
+        <TextColor>Black</TextColor>
+        <TextLocation>Top</TextLocation>
+        <Size>Large</Size>
+        <Method>Preset</Method>
+        <Preset>ActiveToolDescription</Preset>
+        <Argument />
+      </GridControlData>
+      <GridControlData xsi:type="StringDisplayConfig">
+        <Name>Drawer #1</Name>
+        <Label />
+        <TextColor>Black</TextColor>
+        <TextLocation>Top</TextLocation>
+        <Size>Large</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>ActiveToolDescription</Preset>
+        <Argument>MyMachine.Printer.EnclosureTempActual</Argument>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogColorDisplayConfig">
+        <Name>DrawerOneTemp_</Name>
+        <Label>
+Drawer #1
+Temp (C):</Label>
+        <TextColor>White</TextColor>
+        <TextLocation>Top</TextLocation>
+        <Size>Medium</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>DrawerOneTemp</Argument>
+        <LowerThreshold>0</LowerThreshold>
+        <UpperThreshold>1000</UpperThreshold>
+        <Precision>1</Precision>
+        <Unit />
+        <LowColor>#FFBF4242</LowColor>
+        <MidColor>#FFBF4242</MidColor>
+        <HighColor>#FFBF4242</HighColor>
+        <DisplayTextColor>Black</DisplayTextColor>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogColorDisplayConfig">
+        <Name>ExtruderTemp_E1</Name>
+        <Label>Drawer #2 
+Temp(F):</Label>
+        <TextColor>White</TextColor>
+        <TextLocation>Top</TextLocation>
+        <Size>Medium</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>MyMachine.Printer.Extruder[1].TempActual[0]</Argument>
+        <LowerThreshold>0</LowerThreshold>
+        <UpperThreshold>1000</UpperThreshold>
+        <Precision>2</Precision>
+        <Unit />
+        <LowColor>#FFBF4242</LowColor>
+        <MidColor>#FFBF4242</MidColor>
+        <HighColor>#FFBF4242</HighColor>
+        <DisplayTextColor>Black</DisplayTextColor>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogColorDisplayConfig">
+        <Name>DrawerTwoTemp_</Name>
+        <Label>
+Drawer #2
+Temp (C):</Label>
+        <TextColor>White</TextColor>
+        <TextLocation>Top</TextLocation>
+        <Size>Medium</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>DrawerTwoTemp</Argument>
+        <LowerThreshold>0</LowerThreshold>
+        <UpperThreshold>1000</UpperThreshold>
+        <Precision>1</Precision>
+        <Unit />
+        <LowColor>#FFBF4242</LowColor>
+        <MidColor>#FFBF4242</MidColor>
+        <HighColor>#FFBF4242</HighColor>
+        <DisplayTextColor>Black</DisplayTextColor>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogColorDisplayConfig">
+        <Name>Left Hotend</Name>
+        <Label>Left Hotend(C)</Label>
+        <TextColor>White</TextColor>
+        <TextLocation>Top</TextLocation>
+        <Size>Large</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>MyMachine.Printer.Extruder[0].TempActual[0]</Argument>
+        <LowerThreshold>0</LowerThreshold>
+        <UpperThreshold>1000</UpperThreshold>
+        <Precision>1</Precision>
+        <Unit />
+        <LowColor>#FFBF4242</LowColor>
+        <MidColor>#FFBF4242</MidColor>
+        <HighColor>#FFBF4242</HighColor>
+        <DisplayTextColor>Black</DisplayTextColor>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogColorDisplayConfig">
+        <Name>Right Hotend</Name>
+        <Label>Right Hotend(C)</Label>
+        <TextColor>White</TextColor>
+        <TextLocation>Top</TextLocation>
+        <Size>Large</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>MyMachine.Printer.Extruder[1].TempActual[0]</Argument>
+        <LowerThreshold>0</LowerThreshold>
+        <UpperThreshold>1000</UpperThreshold>
+        <Precision>1</Precision>
+        <Unit />
+        <LowColor>#FFBF4242</LowColor>
+        <MidColor>#FFBF4242</MidColor>
+        <HighColor>#FFBF4242</HighColor>
+        <DisplayTextColor>Black</DisplayTextColor>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogColorDisplayConfig">
+        <Name>EnclosureTemp</Name>
+        <Label>Chamber(C)</Label>
+        <TextColor>White</TextColor>
+        <TextLocation>Top</TextLocation>
+        <Size>Large</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>MyMachine.Printer.EnclosureTempActual</Argument>
+        <LowerThreshold>0</LowerThreshold>
+        <UpperThreshold>100</UpperThreshold>
+        <Precision>1</Precision>
+        <Unit />
+        <LowColor>#FFBF4242</LowColor>
+        <MidColor>#FFBF4242</MidColor>
+        <HighColor>#FFBF4242</HighColor>
+        <DisplayTextColor>Black</DisplayTextColor>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogScaleDisplayConfig">
+        <Name>LeftHotend_E0_Actual</Name>
+        <Label />
+        <TextColor>White</TextColor>
+        <TextLocation>None</TextLocation>
+        <Size>Large</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>MyMachine.Printer.Extruder[0].TempActual[0]</Argument>
+        <ReadOnly>true</ReadOnly>
+        <Units>C</Units>
+        <MinValue>0</MinValue>
+        <MaxValue>400</MaxValue>
+        <Precision>2</Precision>
+        <BarTextColor>Black</BarTextColor>
+        <BarFillColor>Green</BarFillColor>
+        <BarBackColor>#FFBF4242</BarBackColor>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogScaleDisplayConfig">
+        <Name>RightHotend_E1_Actual</Name>
+        <Label />
+        <TextColor>White</TextColor>
+        <TextLocation>None</TextLocation>
+        <Size>Large</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>MyMachine.Printer.Extruder[1].TempActual[0]</Argument>
+        <ReadOnly>true</ReadOnly>
+        <Units>C</Units>
+        <MinValue>0</MinValue>
+        <MaxValue>400</MaxValue>
+        <Precision>2</Precision>
+        <BarTextColor>Black</BarTextColor>
+        <BarFillColor>Green</BarFillColor>
+        <BarBackColor>#FFBF4242</BarBackColor>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogScaleDisplayConfig">
+        <Name>ChamberTempActual</Name>
+        <Label />
+        <TextColor>White</TextColor>
+        <TextLocation>None</TextLocation>
+        <Size>Large</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>MyMachine.Printer.EnclosureTempActual</Argument>
+        <ReadOnly>true</ReadOnly>
+        <Units>C</Units>
+        <MinValue>0</MinValue>
+        <MaxValue>400</MaxValue>
+        <Precision>2</Precision>
+        <BarTextColor>Black</BarTextColor>
+        <BarFillColor>Green</BarFillColor>
+        <BarBackColor>#FFBF4242</BarBackColor>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogScaleDisplayConfig">
+        <Name>LeftHotendSetPoint</Name>
+        <Label />
+        <TextColor>White</TextColor>
+        <TextLocation>None</TextLocation>
+        <Size>Large</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>MyMachine.Printer.Extruder[0].TempSetting[0]</Argument>
+        <ReadOnly>true</ReadOnly>
+        <Units>C</Units>
+        <MinValue>0</MinValue>
+        <MaxValue>400</MaxValue>
+        <Precision>2</Precision>
+        <BarTextColor>Black</BarTextColor>
+        <BarFillColor>Green</BarFillColor>
+        <BarBackColor>#FFBF4242</BarBackColor>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogScaleDisplayConfig">
+        <Name>RightHotend_E1_SetPoint</Name>
+        <Label />
+        <TextColor>White</TextColor>
+        <TextLocation>None</TextLocation>
+        <Size>Large</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>MyMachine.Printer.Extruder[1].TempSetting[0]</Argument>
+        <ReadOnly>true</ReadOnly>
+        <Units>C</Units>
+        <MinValue>0</MinValue>
+        <MaxValue>400</MaxValue>
+        <Precision>2</Precision>
+        <BarTextColor>Black</BarTextColor>
+        <BarFillColor>Green</BarFillColor>
+        <BarBackColor>#FFBF4242</BarBackColor>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogScaleDisplayConfig">
+        <Name>ChamberTempSetPoint</Name>
+        <Label />
+        <TextColor>White</TextColor>
+        <TextLocation>None</TextLocation>
+        <Size>Large</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>MyMachine.Printer.EnclosureTempSetting</Argument>
+        <ReadOnly>true</ReadOnly>
+        <Units>C</Units>
+        <MinValue>0</MinValue>
+        <MaxValue>400</MaxValue>
+        <Precision>2</Precision>
+        <BarTextColor>Black</BarTextColor>
+        <BarFillColor>Green</BarFillColor>
+        <BarBackColor>#FFBF4242</BarBackColor>
+      </GridControlData>
+      <GridControlData xsi:type="StringDisplayConfig">
+        <Name>Printer Status</Name>
+        <Label />
+        <TextColor>Black</TextColor>
+        <TextLocation>Top</TextLocation>
+        <Size>Large</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>PrinterStatus</Argument>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogScaleDisplayConfig">
+        <Name>DrawerOneTemp_Actual</Name>
+        <Label />
+        <TextColor>Black</TextColor>
+        <TextLocation>None</TextLocation>
+        <Size>Large</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>DrawerOne</Argument>
+        <ReadOnly>true</ReadOnly>
+        <Units>C</Units>
+        <MinValue>0</MinValue>
+        <MaxValue>400</MaxValue>
+        <Precision>2</Precision>
+        <BarTextColor>Black</BarTextColor>
+        <BarFillColor>Green</BarFillColor>
+        <BarBackColor>#FFBF4242</BarBackColor>
+      </GridControlData>
+      <GridControlData xsi:type="AnalogScaleDisplayConfig">
+        <Name>DrawerTwoTemp_Actual</Name>
+        <Label />
+        <TextColor>Black</TextColor>
+        <TextLocation>None</TextLocation>
+        <Size>Large</Size>
+        <Method>GlobalVariable</Method>
+        <Preset>None</Preset>
+        <Argument>DrawerTwoTemp</Argument>
+        <ReadOnly>true</ReadOnly>
+        <Units>C</Units>
+        <MinValue>0</MinValue>
+        <MaxValue>400</MaxValue>
+        <Precision>2</Precision>
+        <BarTextColor>Black</BarTextColor>
+        <BarFillColor>Green</BarFillColor>
+        <BarBackColor>#FFBF4242</BarBackColor>
+      </GridControlData>
+    </GridControls>
+    <ColorTheme>
+      <ToolBarBackColor>#FF333333</ToolBarBackColor>
+      <PanelBackColor>#FF333333</PanelBackColor>
+      <PanelForeColor>#FFFFFFFF</PanelForeColor>
+      <PanelHeaderBackColor>#FF333333</PanelHeaderBackColor>
+      <PanelHeaderForeColor>#FFFFFFFF</PanelHeaderForeColor>
+      <PanelMarginColor>#FF333333</PanelMarginColor>
+      <SelectedButtonBackColor>#FFBFBFBF</SelectedButtonBackColor>
+      <SelectedButtonForeColor>#FFFFFFFF</SelectedButtonForeColor>
+      <DeselectedButtonBackColor>#FFBFBFBF</DeselectedButtonBackColor>
+      <DeselectedButtonForeColor>#FF333333</DeselectedButtonForeColor>
+      <RecentColors>
+        <string>#7F00FF00</string>
+        <string>#7F0000FF</string>
+        <string>#7FFF0000</string>
+        <string>#FF9AEE9A</string>
+        <string>#FFF45E5E</string>
+        <string>#FFFF0000</string>
+        <string>#00FFFFFF</string>
+        <string>#FF008000</string>
+        <string>#FFFFFFFF</string>
+        <string>#FF333333</string>
+        <string>#FF575656</string>
+      </RecentColors>
+    </ColorTheme>
+    <WorkOffsetConfiguration>
+      <WorkOffetLabels>
+        <string />
+        <string />
+        <string />
+        <string />
+        <string />
+        <string />
+        <string />
+        <string />
+        <string />
+      </WorkOffetLabels>
+    </WorkOffsetConfiguration>
+  </DisplayConfig>
+  <MachineConfig>
+    <MachineType>2</MachineType>
+    <FileLocation />
+    <CartesianAxes>
+      <CartesianAxis>
+        <Name>X</Name>
+        <Use>true</Use>
+        <Units />
+        <Precision>-1</Precision>
+        <Min>-0.5</Min>
+        <Max>565</Max>
+      </CartesianAxis>
+      <CartesianAxis>
+        <Name>Y</Name>
+        <Use>true</Use>
+        <Units />
+        <Precision>-1</Precision>
+        <Min>-0.5</Min>
+        <Max>473</Max>
+      </CartesianAxis>
+      <CartesianAxis>
+        <Name>Z</Name>
+        <Use>true</Use>
+        <Units />
+        <Precision>-1</Precision>
+        <Min>-INF</Min>
+        <Max>INF</Max>
+      </CartesianAxis>
+      <CartesianAxis>
+        <Name>Rx</Name>
+        <Use>false</Use>
+        <Units />
+        <Precision>-1</Precision>
+        <Min>-INF</Min>
+        <Max>INF</Max>
+      </CartesianAxis>
+      <CartesianAxis>
+        <Name>Ry</Name>
+        <Use>false</Use>
+        <Units />
+        <Precision>-1</Precision>
+        <Min>-INF</Min>
+        <Max>INF</Max>
+      </CartesianAxis>
+      <CartesianAxis>
+        <Name>Rz</Name>
+        <Use>false</Use>
+        <Units />
+        <Precision>-1</Precision>
+        <Min>-INF</Min>
+        <Max>INF</Max>
+      </CartesianAxis>
+    </CartesianAxes>
+    <PrinterConfig>
+      <Extruders>
+        <ExtruderConfig>
+          <Name>E0</Name>
+          <Use>true</Use>
+          <Units />
+          <Precision>-1</Precision>
+          <Min>-INF</Min>
+          <Max>INF</Max>
+          <ZoneCount>1</ZoneCount>
+          <Data>
+            <Axis>
+              <AxisNum>0</AxisNum>
+            </Axis>
+            <XOffset>0</XOffset>
+            <YOffset>0</YOffset>
+            <ZOffset>0</ZOffset>
+            <EOffset>0</EOffset>
+            <ScaleFactor>0</ScaleFactor>
+            <CmdPos>0</CmdPos>
+            <CmdVel>0</CmdVel>
+            <TempSetting>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+            </TempSetting>
+            <MinWarmTemp>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+            </MinWarmTemp>
+            <TempTolerance>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+            </TempTolerance>
+            <TempActual>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+            </TempActual>
+            <TempOffset>0</TempOffset>
+            <RetractLength>0</RetractLength>
+            <UnRetractLength>0</UnRetractLength>
+            <RetractFeedrate>0</RetractFeedrate>
+            <UnRetractFeedrate>0</UnRetractFeedrate>
+            <ZLift>0</ZLift>
+            <AirPressure>false</AirPressure>
+            <VacuumPressure>false</VacuumPressure>
+            <LowTorque>false</LowTorque>
+            <HighTorque>false</HighTorque>
+            <TempReady>false</TempReady>
+          </Data>
+        </ExtruderConfig>
+        <ExtruderConfig>
+          <Name>E1</Name>
+          <Use>true</Use>
+          <Units />
+          <Precision>-1</Precision>
+          <Min>-INF</Min>
+          <Max>INF</Max>
+          <ZoneCount>1</ZoneCount>
+          <Data>
+            <Axis>
+              <AxisNum>0</AxisNum>
+            </Axis>
+            <XOffset>0</XOffset>
+            <YOffset>0</YOffset>
+            <ZOffset>0</ZOffset>
+            <EOffset>0</EOffset>
+            <ScaleFactor>0</ScaleFactor>
+            <CmdPos>0</CmdPos>
+            <CmdVel>0</CmdVel>
+            <TempSetting>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+            </TempSetting>
+            <MinWarmTemp>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+            </MinWarmTemp>
+            <TempTolerance>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+            </TempTolerance>
+            <TempActual>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+            </TempActual>
+            <TempOffset>0</TempOffset>
+            <RetractLength>0</RetractLength>
+            <UnRetractLength>0</UnRetractLength>
+            <RetractFeedrate>0</RetractFeedrate>
+            <UnRetractFeedrate>0</UnRetractFeedrate>
+            <ZLift>0</ZLift>
+            <AirPressure>false</AirPressure>
+            <VacuumPressure>false</VacuumPressure>
+            <LowTorque>false</LowTorque>
+            <HighTorque>false</HighTorque>
+            <TempReady>false</TempReady>
+          </Data>
+        </ExtruderConfig>
+        <ExtruderConfig>
+          <Name>E3</Name>
+          <Use>false</Use>
+          <Units />
+          <Precision>-1</Precision>
+          <Min>-INF</Min>
+          <Max>INF</Max>
+          <ZoneCount>1</ZoneCount>
+          <Data>
+            <Axis>
+              <AxisNum>0</AxisNum>
+            </Axis>
+            <XOffset>0</XOffset>
+            <YOffset>0</YOffset>
+            <ZOffset>0</ZOffset>
+            <EOffset>0</EOffset>
+            <ScaleFactor>0</ScaleFactor>
+            <CmdPos>0</CmdPos>
+            <CmdVel>0</CmdVel>
+            <TempSetting>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+            </TempSetting>
+            <MinWarmTemp>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+            </MinWarmTemp>
+            <TempTolerance>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+            </TempTolerance>
+            <TempActual>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+              <float>0</float>
+            </TempActual>
+            <TempOffset>0</TempOffset>
+            <RetractLength>0</RetractLength>
+            <UnRetractLength>0</UnRetractLength>
+            <RetractFeedrate>0</RetractFeedrate>
+            <UnRetractFeedrate>0</UnRetractFeedrate>
+            <ZLift>0</ZLift>
+            <AirPressure>false</AirPressure>
+            <VacuumPressure>false</VacuumPressure>
+            <LowTorque>false</LowTorque>
+            <HighTorque>false</HighTorque>
+            <TempReady>false</TempReady>
+          </Data>
+        </ExtruderConfig>
+      </Extruders>
+      <Bed>
+        <Use>false</Use>
+        <Name />
+        <ZoneCount>1</ZoneCount>
+        <BedTempSetting>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+        </BedTempSetting>
+        <BedTempTolerance>0</BedTempTolerance>
+      </Bed>
+      <Enclosure>
+        <Use>false</Use>
+        <Name />
+        <EnclosureTempSetting>0</EnclosureTempSetting>
+        <EnclosureTempTolerance>0</EnclosureTempTolerance>
+      </Enclosure>
+    </PrinterConfig>
+    <ImportedData>
+      <GroupName>Printer</GroupName>
+      <JointAxisIndexes>
+        <ArrayOfInt>
+          <int>1</int>
+        </ArrayOfInt>
+        <ArrayOfInt>
+          <int>2</int>
+        </ArrayOfInt>
+        <ArrayOfInt>
+          <int>3</int>
+        </ArrayOfInt>
+        <ArrayOfInt />
+        <ArrayOfInt />
+        <ArrayOfInt />
+        <ArrayOfInt>
+          <int>4</int>
+        </ArrayOfInt>
+        <ArrayOfInt>
+          <int>5</int>
+        </ArrayOfInt>
+      </JointAxisIndexes>
+    </ImportedData>
+  </MachineConfig>
+  <GeneralConfig>
+    <StartFullScreen>false</StartFullScreen>
+    <RestoreOffsets>true</RestoreOffsets>
+    <Language>en</Language>
+    <Notifications>
+      <Show>true</Show>
+      <Delay>3</Delay>
+      <Custom />
+    </Notifications>
+    <HotKeys>
+      <Use>true</Use>
+      <Actions>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Speed [0]</DisplayName>
+          <Function>JogSpeed0</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>NumPad0</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Speed [1]</DisplayName>
+          <Function>JogSpeed1</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>NumPad1</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Speed [2]</DisplayName>
+          <Function>JogSpeed2</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>NumPad2</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Speed [3]</DisplayName>
+          <Function>JogSpeed3</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>NumPad3</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Increment [0]</DisplayName>
+          <Function>JogInc0</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>D0</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Increment [1]</DisplayName>
+          <Function>JogInc1</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>D1</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Increment [2]</DisplayName>
+          <Function>JogInc2</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>D2</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Increment [3]</DisplayName>
+          <Function>JogInc3</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>D3</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Reset</DisplayName>
+          <Function>Reset</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>R</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>true</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Feed Hold</DisplayName>
+          <Function>FeedHold</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>P</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>true</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Start/Restart</DisplayName>
+          <Function>Start</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>R</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>true</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Manual Mode</DisplayName>
+          <Function>Manual</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>M</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>true</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>MDI Mode</DisplayName>
+          <Function>MDI</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>M</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>true</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Auto Mode</DisplayName>
+          <Function>Auto</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>A</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>true</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Servo On/Off</DisplayName>
+          <Function>ServoOnOff</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>E</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Abort</DisplayName>
+          <Function>Abort</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>A</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>true</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Connect / Disconnect</DisplayName>
+          <Function>Connect</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>C</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>true</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Login/Logout</DisplayName>
+          <Function>Login</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Open Offsets Dialog</DisplayName>
+          <Function>Offsets</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Open Tool Manager</DisplayName>
+          <Function>Tools</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Open Network Manager</DisplayName>
+          <Function>Network</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>About</DisplayName>
+          <Function>About</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Open Home Presets</DisplayName>
+          <Function>HomePresets</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>View Alarm Dialog</DisplayName>
+          <Function>ViewAlarm</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>A</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>true</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Clear Alarms</DisplayName>
+          <Function>Clear</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>Delete</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Acknowledge Messages</DisplayName>
+          <Function>Acknowledge</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>M</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>true</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Draw Part Preview</DisplayName>
+          <Function>DrawPart</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Toggle Live View</DisplayName>
+          <Function>LiveView</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Show History</DisplayName>
+          <Function>ShowHistory</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData />
+          <DisplayName>Restart</DisplayName>
+          <Function>RestartPart</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>0</SpecData>
+          <DisplayName>Jog X-</DisplayName>
+          <Function>Jog</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>X</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>1</SpecData>
+          <DisplayName>Jog X+</DisplayName>
+          <Function>Jog</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>X</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>true</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>2</SpecData>
+          <DisplayName>Jog Y-</DisplayName>
+          <Function>Jog</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>Y</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>3</SpecData>
+          <DisplayName>Jog Y+</DisplayName>
+          <Function>Jog</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>Y</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>true</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>4</SpecData>
+          <DisplayName>Jog Z-</DisplayName>
+          <Function>Jog</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>Z</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>5</SpecData>
+          <DisplayName>Jog Z+</DisplayName>
+          <Function>Jog</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>Z</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>true</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>12</SpecData>
+          <DisplayName>Jog E0-</DisplayName>
+          <Function>Jog</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>D0</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>13</SpecData>
+          <DisplayName>Jog E0+</DisplayName>
+          <Function>Jog</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>D0</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>true</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>14</SpecData>
+          <DisplayName>Jog E1-</DisplayName>
+          <Function>Jog</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>D1</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>false</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>15</SpecData>
+          <DisplayName>Jog E1+</DisplayName>
+          <Function>Jog</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+          <HotKey>D1</HotKey>
+          <Ctrl>true</Ctrl>
+          <Shift>true</Shift>
+          <Alt>true</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>GlobePic</SpecData>
+          <DisplayName>Toggle GlobePic</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>JogLaunch</SpecData>
+          <DisplayName>Toggle JogLaunch</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Left Hotend</SpecData>
+          <DisplayName>Toggle Left Hotend</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Motion</SpecData>
+          <DisplayName>Toggle Motion</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>PositionLaunch</SpecData>
+          <DisplayName>Toggle PositionLaunch</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Print Menu</SpecData>
+          <DisplayName>Toggle Print Menu</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>ServoEnable</SpecData>
+          <DisplayName>Toggle ServoEnable</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Right Hotend</SpecData>
+          <DisplayName>Toggle Right Hotend</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Material Status</SpecData>
+          <DisplayName>Toggle Material Status</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Menu</SpecData>
+          <DisplayName>Toggle Menu</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Bay #3</SpecData>
+          <DisplayName>Toggle Bay #3</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Bay #4</SpecData>
+          <DisplayName>Toggle Bay #4</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Bay #1</SpecData>
+          <DisplayName>Toggle Bay #1</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Bay #2</SpecData>
+          <DisplayName>Toggle Bay #2</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Confirm_(Run M201)</SpecData>
+          <DisplayName>Toggle Confirm_(Run M201)</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Unload</SpecData>
+          <DisplayName>Toggle Unload</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Select File</SpecData>
+          <DisplayName>Toggle Select File</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Print (CycleStart)</SpecData>
+          <DisplayName>Toggle Print (CycleStart)</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Pause (Feed Hold)</SpecData>
+          <DisplayName>Toggle Pause (Feed Hold)</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Reset</SpecData>
+          <DisplayName>Toggle Reset</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Control</SpecData>
+          <DisplayName>Toggle Control</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Load</SpecData>
+          <DisplayName>Toggle Load</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>ABS</SpecData>
+          <DisplayName>Toggle ABS</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>CFPEEK</SpecData>
+          <DisplayName>Toggle CFPEEK</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Cool Down</SpecData>
+          <DisplayName>Toggle Cool Down</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Position</SpecData>
+          <DisplayName>Toggle Position</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Head</SpecData>
+          <DisplayName>Toggle Head</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>Reserve</SpecData>
+          <DisplayName>Toggle Reserve</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="HotKeyConfigData">
+          <SpecData>AutoMode</SpecData>
+          <DisplayName>Toggle AutoMode</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <HotKey>None</HotKey>
+          <Ctrl>false</Ctrl>
+          <Shift>false</Shift>
+          <Alt>false</Alt>
+          <ScrLk>false</ScrLk>
+        </ActionConfigData>
+      </Actions>
+    </HotKeys>
+    <ExternalInputs>
+      <Use>true</Use>
+      <Actions>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Speed [0]</DisplayName>
+          <Function>JogSpeed0</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Speed [1]</DisplayName>
+          <Function>JogSpeed1</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Speed [2]</DisplayName>
+          <Function>JogSpeed2</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Speed [3]</DisplayName>
+          <Function>JogSpeed3</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Increment [0]</DisplayName>
+          <Function>JogInc0</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Increment [1]</DisplayName>
+          <Function>JogInc1</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Increment [2]</DisplayName>
+          <Function>JogInc2</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Select Jog Increment [3]</DisplayName>
+          <Function>JogInc3</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Reset</DisplayName>
+          <Function>Reset</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Feed Hold</DisplayName>
+          <Function>FeedHold</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Start/Restart</DisplayName>
+          <Function>Start</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Manual Mode</DisplayName>
+          <Function>Manual</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>MDI Mode</DisplayName>
+          <Function>MDI</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Auto Mode</DisplayName>
+          <Function>Auto</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Servo On/Off</DisplayName>
+          <Function>ServoOnOff</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Abort</DisplayName>
+          <Function>Abort</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Connect / Disconnect</DisplayName>
+          <Function>Connect</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Login/Logout</DisplayName>
+          <Function>Login</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Open Offsets Dialog</DisplayName>
+          <Function>Offsets</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Open Tool Manager</DisplayName>
+          <Function>Tools</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Open Network Manager</DisplayName>
+          <Function>Network</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>About</DisplayName>
+          <Function>About</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Open Home Presets</DisplayName>
+          <Function>HomePresets</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>View Alarm Dialog</DisplayName>
+          <Function>ViewAlarm</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Clear Alarms</DisplayName>
+          <Function>Clear</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Acknowledge Messages</DisplayName>
+          <Function>Acknowledge</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Draw Part Preview</DisplayName>
+          <Function>DrawPart</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Toggle Live View</DisplayName>
+          <Function>LiveView</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Show History</DisplayName>
+          <Function>ShowHistory</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData />
+          <DisplayName>Restart</DisplayName>
+          <Function>RestartPart</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>0</SpecData>
+          <DisplayName>Jog X-</DisplayName>
+          <Function>Jog</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>1</SpecData>
+          <DisplayName>Jog X+</DisplayName>
+          <Function>Jog</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>2</SpecData>
+          <DisplayName>Jog Y-</DisplayName>
+          <Function>Jog</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>3</SpecData>
+          <DisplayName>Jog Y+</DisplayName>
+          <Function>Jog</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>4</SpecData>
+          <DisplayName>Jog Z-</DisplayName>
+          <Function>Jog</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>5</SpecData>
+          <DisplayName>Jog Z+</DisplayName>
+          <Function>Jog</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>12</SpecData>
+          <DisplayName>Jog E0-</DisplayName>
+          <Function>Jog</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>13</SpecData>
+          <DisplayName>Jog E0+</DisplayName>
+          <Function>Jog</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>14</SpecData>
+          <DisplayName>Jog E1-</DisplayName>
+          <Function>Jog</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>15</SpecData>
+          <DisplayName>Jog E1+</DisplayName>
+          <Function>Jog</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>JogLaunch</SpecData>
+          <DisplayName>Toggle JogLaunch</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Motion</SpecData>
+          <DisplayName>Toggle Motion</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>PositionLaunch</SpecData>
+          <DisplayName>Toggle PositionLaunch</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Print Menu</SpecData>
+          <DisplayName>Toggle Print Menu</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>ServoEnable</SpecData>
+          <DisplayName>Toggle ServoEnable</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Material Status</SpecData>
+          <DisplayName>Toggle Material Status</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Menu</SpecData>
+          <DisplayName>Toggle Menu</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Select File</SpecData>
+          <DisplayName>Toggle Select File</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Print (CycleStart)</SpecData>
+          <DisplayName>Toggle Print (CycleStart)</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>true</Manual>
+          <MDI>true</MDI>
+          <Auto>true</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Pause (Feed Hold)</SpecData>
+          <DisplayName>Toggle Pause (Feed Hold)</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Reset</SpecData>
+          <DisplayName>Toggle Reset</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Control</SpecData>
+          <DisplayName>Toggle Control</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Position</SpecData>
+          <DisplayName>Toggle Position</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Head</SpecData>
+          <DisplayName>Toggle Head</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Reserve</SpecData>
+          <DisplayName>Toggle Reserve</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>AutoMode</SpecData>
+          <DisplayName>Toggle AutoMode</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Unload_E1</SpecData>
+          <DisplayName>Toggle Unload_E1</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <Variable>Unload_E1_Button</Variable>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>CF PEEK</SpecData>
+          <DisplayName>Toggle CF PEEK</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Ultem 9085</SpecData>
+          <DisplayName>Toggle Ultem 9085</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Ultem 1010</SpecData>
+          <DisplayName>Toggle Ultem 1010</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>ESD Ultem 9085</SpecData>
+          <DisplayName>Toggle ESD Ultem 9085</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Load_E1</SpecData>
+          <DisplayName>Toggle Load_E1</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <Variable>Load_E1_Button</Variable>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Load_E0</SpecData>
+          <DisplayName>Toggle Load_E0</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <Variable>Load_E0_Button</Variable>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Unload_E0</SpecData>
+          <DisplayName>Toggle Unload_E0</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <Variable />
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Confirm_MCode</SpecData>
+          <DisplayName>Toggle Confirm_MCode</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <Variable>ConfirmM201</Variable>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>GF Ultem 1010</SpecData>
+          <DisplayName>Toggle GF Ultem 1010</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>ABS</SpecData>
+          <DisplayName>Toggle ABS</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>SUP6</SpecData>
+          <DisplayName>Toggle SUP6</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>SUP7</SpecData>
+          <DisplayName>Toggle SUP7</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>SUP4</SpecData>
+          <DisplayName>Toggle SUP4</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>GearboxLogo</SpecData>
+          <DisplayName>Toggle GearboxLogo</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+        </ActionConfigData>
+        <ActionConfigData xsi:type="ExternalInputConfigData">
+          <SpecData>Confirm_M203</SpecData>
+          <DisplayName>Toggle Confirm_M203</DisplayName>
+          <Function>ToggleButton</Function>
+          <Manual>false</Manual>
+          <MDI>false</MDI>
+          <Auto>false</Auto>
+          <Variable>ConfirmM203</Variable>
+        </ActionConfigData>
+      </Actions>
+    </ExternalInputs>
+    <UserDialogs />
+    <RestartOptions>
+      <Customs>
+        <StandAloneGroup>
+          <Codes />
+          <Name>Stand-Alone Codes</Name>
+          <StandAlone>true</StandAlone>
+        </StandAloneGroup>
+        <Groups />
+      </Customs>
+      <Overrides>
+        <StandAloneGroup>
+          <Codes />
+          <Name>Stand-Alone Codes</Name>
+          <StandAlone>true</StandAlone>
+        </StandAloneGroup>
+        <Groups />
+      </Overrides>
+      <UsePrompt>false</UsePrompt>
+      <LineSelectionAllowed>true</LineSelectionAllowed>
+      <DirectRestartAllowed>true</DirectRestartAllowed>
+      <Reposition>false</Reposition>
+      <ZSafeHeight>0</ZSafeHeight>
+    </RestartOptions>
+    <FirstTool>0</FirstTool>
+  </GeneralConfig>
+  <OemConfig>
+    <LogoImagePath>C:\ProgramData\Yaskawa\Compass\Config\Images\Logo\logo.png</LogoImagePath>
+    <ContactInformation>Gearbox3D
+info@gearbox3d.com
+904 36th Street SE, Suite B
+Grand Rapids, MI 49508 USA
+</ContactInformation>
+    <TechnicianHash>887FB45D236413CC7716B6301A3979D0</TechnicianHash>
+    <OEMHash>3c2774588f8cc75b8caa40de450487710538f2482df5d9c26e0e0f45337cf2f8</OEMHash>
+  </OemConfig>
+  <ButtonConfig>
+    <ControlBarButtons />
+    <HeaderBarButtons />
+    <CustomButtons>
+      <ButtonData>
+        <Name>JogLaunch</Name>
+        <Customization>
+          <DisplayText>Jog</DisplayText>
+          <Function>
+            <Method>ShowFloatingZone</Method>
+            <Argument>JogPanel</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>White</Foreground>
+              <Background>#FFBD2F2D</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>#FFFFFFFF</Foreground>
+              <Background>#FFBD2F2D</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>false</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Motion</Name>
+        <Customization>
+          <DisplayText>Motion</DisplayText>
+          <Function>
+            <Method>ShowFloatingZone</Method>
+            <Argument>JogPanel</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <VariableName>@GlobalVariables.HostData.ToP.Coil.SignalsAllDrivesEnabled</VariableName>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Red</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>350</Width>
+            <Height>250</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>PositionLaunch</Name>
+        <Customization>
+          <DisplayText>Position</DisplayText>
+          <Function>
+            <Method>ShowFloatingZone</Method>
+            <Argument>PositionPanel</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>White</Foreground>
+              <Background>#FFBD2F2D</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>#FFFFFFFF</Foreground>
+              <Background>#FFBD2F2D</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>false</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Print Menu</Name>
+        <Customization>
+          <DisplayText>Print Menu</DisplayText>
+          <Function>
+            <Method>ShowFloatingZone</Method>
+            <Argument>PrintSetupPanel</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>350</Width>
+            <Height>250</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>ServoEnable</Name>
+        <Customization>
+          <DisplayText>Servo</DisplayText>
+          <Function>
+            <Method>UserCreatedPlciVariable</Method>
+            <Argument>@GlobalVariables.HostData.From.Coil.triggerPower</Argument>
+            <Toggle>true</Toggle>
+            <FalseFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>true</Enabled>
+            <VariableName>@GlobalVariables.HostData.ToP.Coil.SignalsAllDrivesEnabled</VariableName>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Red</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>300</Width>
+            <Height>200</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Material Status</Name>
+        <Customization>
+          <DisplayText>Material Status</DisplayText>
+          <Function>
+            <Method>ShowFloatingZone</Method>
+            <Argument>MaterialBayPanel</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Menu</Name>
+        <Customization>
+          <DisplayText>Menu</DisplayText>
+          <Function>
+            <Method>ShowFloatingZone</Method>
+            <Argument>ControlBarPanel</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Confirm_MCode</Name>
+        <Customization>
+          <DisplayText>Confirm</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument>M201</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Red</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>FixedPixelSize</Style>
+            <Width>410</Width>
+            <Height>200</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Unload_E1</Name>
+        <Customization>
+          <DisplayText>Unload</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument>M204</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>FixedPixelSize</Style>
+            <Width>410</Width>
+            <Height>200</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>AutoMode</Name>
+        <Customization>
+          <DisplayText>Auto</DisplayText>
+          <Function>
+            <Method>UserCreatedPlciVariable</Method>
+            <Argument>@GlobalVariables.HostData.From.Coil.JoggingMode</Argument>
+            <Toggle>true</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>true</Enabled>
+            <VariableName>@GlobalVariables.HostData.From.Coil.JoggingMode</VariableName>
+            <TrueColor>Red</TrueColor>
+            <FalseColor>Green</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>FixedPixelSize</Style>
+            <Width>300</Width>
+            <Height>200</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Select File</Name>
+        <Customization>
+          <DisplayText>Select File</DisplayText>
+          <Function>
+            <Method>ShowFloatingZone</Method>
+            <Argument>GCodeMDIPanel</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>300</Width>
+            <Height>200</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Print (CycleStart)</Name>
+        <Customization>
+          <DisplayText>Print</DisplayText>
+          <Function>
+            <Method>UserCreatedPlciVariable</Method>
+            <Argument>@GlobalVariables.MyMachine.Control.CycleStart</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>true</Enabled>
+            <VariableName>@GlobalVariables.MyMachine.Control.CycleStart</VariableName>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Red</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>300</Width>
+            <Height>200</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Pause (Feed Hold)</Name>
+        <Customization>
+          <DisplayText>Pause</DisplayText>
+          <Function>
+            <Method>UserCreatedPlciVariable</Method>
+            <Argument>@GlobalVariables.HostData.From.Coil.triggerHold</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>true</Enabled>
+            <VariableName>@GlobalVariables.HostData.From.Coil.triggerHold</VariableName>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Red</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>300</Width>
+            <Height>200</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Reset</Name>
+        <Customization>
+          <DisplayText>Reset</DisplayText>
+          <Function>
+            <Method>UserCreatedPlciVariable</Method>
+            <Argument>@GlobalVariables.HostData.From.Coil.triggerReset</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>true</Enabled>
+            <VariableName>@GlobalVariables.HostData.From.Coil.triggerReset</VariableName>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Red</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>300</Width>
+            <Height>200</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Control</Name>
+        <Customization>
+          <DisplayText>Control</DisplayText>
+          <Function>
+            <Method>ShowFloatingZone</Method>
+            <Argument>ControlBarPanel</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Load_E0</Name>
+        <Customization>
+          <DisplayText>Load</DisplayText>
+          <Function>
+            <Method>ShowFloatingZone</Method>
+            <Argument>MaterialListPanel</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>FixedPixelSize</Style>
+            <Width>410</Width>
+            <Height>200</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>CF PEEK</Name>
+        <Customization>
+          <DisplayText>CF PEEK</DisplayText>
+          <Function>
+            <Method>UserCreatedPlciVariable</Method>
+            <Argument>@GlobalVariables.M608</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <VariableName />
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Red</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Position</Name>
+        <Customization>
+          <DisplayText>Position</DisplayText>
+          <Function>
+            <Method>ShowFloatingZone</Method>
+            <Argument>PositionPanel</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Head</Name>
+        <Customization>
+          <DisplayText>Head</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument />
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Reserve</Name>
+        <Customization>
+          <DisplayText>Reserve</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument />
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>FixedPixelSize</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Ultem 9085</Name>
+        <Customization>
+          <DisplayText>Ultem 9085</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument>M602</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Ultem 1010</Name>
+        <Customization>
+          <DisplayText>Ultem 1010</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument>M604</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>ESD Ultem 9085</Name>
+        <Customization>
+          <DisplayText>ESD Ultem 9085</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument>M606</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>GF Ultem 1010</Name>
+        <Customization>
+          <DisplayText>GF Ultem 1010</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument>M610</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Load_E1</Name>
+        <Customization>
+          <DisplayText>Load</DisplayText>
+          <Function>
+            <Method>ShowFloatingZone</Method>
+            <Argument>MaterialListPanel_E1</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>FixedPixelSize</Style>
+            <Width>410</Width>
+            <Height>200</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Unload_E0</Name>
+        <Customization>
+          <DisplayText>Unload</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument>M202</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>FixedPixelSize</Style>
+            <Width>410</Width>
+            <Height>200</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>ABS</Name>
+        <Customization>
+          <DisplayText>ABS</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument>612</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>SUP6</Name>
+        <Customization>
+          <DisplayText>SUP6</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument>M615</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>SUP7</Name>
+        <Customization>
+          <DisplayText>SUP7</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument>M617</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>SUP4</Name>
+        <Customization>
+          <DisplayText>SUP4</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument>M619</Argument>
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>GearboxLogo</Name>
+        <Customization>
+          <DisplayText />
+          <Function>
+            <Method>Predefined</Method>
+            <Argument>Single Block </Argument>
+            <Toggle>true</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FF333333</Background>
+              <UseDefault>false</UseDefault>
+              <ImagePath>C:\ProgramData\Yaskawa\Compass\Config\Images\Browser\Globey McGlobeface.png</ImagePath>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FF333333</Background>
+              <UseDefault>false</UseDefault>
+              <ImagePath>C:\ProgramData\Yaskawa\Compass\Config\Images\Browser\Globey McGlobeface.png</ImagePath>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>false</Bold>
+            <Size>Medium</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>Stretch</Style>
+            <Width>100</Width>
+            <Height>100</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+      <ButtonData>
+        <Name>Confirm_M203</Name>
+        <Customization>
+          <DisplayText>Confirm</DisplayText>
+          <Function>
+            <Method>CustomGCode</Method>
+            <Argument />
+            <Toggle>false</Toggle>
+            <FalseFormat>
+              <Foreground>#FF333333</Foreground>
+              <Background>#FFBFBFBF</Background>
+              <UseDefault>true</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </FalseFormat>
+            <TrueFormat>
+              <Foreground>Black</Foreground>
+              <Background>#FF9AEE9A</Background>
+              <UseDefault>false</UseDefault>
+              <Location>
+                <Horizontal>Center</Horizontal>
+                <Vertical>Center</Vertical>
+              </Location>
+            </TrueFormat>
+          </Function>
+          <Status>
+            <Enabled>false</Enabled>
+            <TrueColor>Green</TrueColor>
+            <FalseColor>Transparent</FalseColor>
+          </Status>
+          <TextFormat>
+            <Bold>true</Bold>
+            <Size>Large</Size>
+            <Location>
+              <Horizontal>Center</Horizontal>
+              <Vertical>Center</Vertical>
+            </Location>
+          </TextFormat>
+          <Size>
+            <Style>FixedPixelSize</Style>
+            <Width>410</Width>
+            <Height>200</Height>
+            <BindFixedRatioWidth>false</BindFixedRatioWidth>
+          </Size>
+          <Usage>
+            <Manual>true</Manual>
+            <MDI>true</MDI>
+            <Auto>true</Auto>
+            <TechnicianOnly>false</TechnicianOnly>
+            <OEMOnly>false</OEMOnly>
+            <DisableDuringGCodeStreaming>false</DisableDuringGCodeStreaming>
+          </Usage>
+        </Customization>
+      </ButtonData>
+    </CustomButtons>
+  </ButtonConfig>
+</ConfigurationData>
