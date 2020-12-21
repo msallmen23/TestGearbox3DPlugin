@@ -1,0 +1,44 @@
+﻿<src:CustomizablePanel 
+           xmlns:src="clr-namespace:Yaskawa.WPFControls;assembly=IYaskawaCNCPlugin100"
+             x:Class="Gearbox3D_Plugin.E0_MaterialList_UserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Gearbox3D_Plugin"
+             mc:Ignorable="d" FontSize="24" FontFamily="Segoe UI" FontWeight="SemiBold"
+             d:DesignHeight="1024" Loaded="CustomizablePanel_Loaded" Width="600" SnapsToDevicePixels="True">
+    <Grid SnapsToDevicePixels="True" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="1" Grid.Column="1" Grid.RowSpan="6" Grid.ColumnSpan="2" Margin="20" FontWeight="SemiBold" HorizontalContentAlignment="Stretch" Padding="0" UseLayoutRounding="True" Height="750" VerticalContentAlignment="Top" Width="400" VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="vertical" Height="750" VerticalAlignment="Center">
+                <Button Content="THERMAX PEI*" Click="SelectUltem9085_OnClick" MinHeight="90" MinWidth="100" MaxWidth="450" Margin="10" FontWeight="SemiBold"/>
+                <Button Content="3DXSTAT ESD PEI***" Click="SelectESD_Ultem1010_OnClick"  MinHeight="90" MinWidth="100" MaxWidth="450" Margin="10" FontWeight="SemiBold"/>
+                <Button Content="THERMAX PEI**" Click="SelectUltem1010_OnClick"  MinHeight="90" MinWidth="100" MaxWidth="450" Margin="10" FontWeight="SemiBold"/>
+                <Button Content="FIBER-X GF PEI***" Click="SelectGF_Ultem1010_OnClick"  MinHeight="90" MinWidth="100" MaxWidth="450" Margin="10" FontWeight="SemiBold"/>
+                <Button Content="CARBON-X CF PEEK" Click="SelectCFPEEK_OnClick"  MinHeight="90" MinWidth="100" MaxWidth="450" Margin="10" FontWeight="SemiBold"/>
+                <Button Content="3DXTECH ABS" Click="SelectABS_OnClick"  MinHeight="90" MinWidth="100" MaxWidth="450" Margin="10" FontWeight="SemiBold"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!--<Button Content="Confirm" Click="Confirm_OnClick" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" Margin="35,10,55,60" FontWeight="SemiBold" MinWidth="450" MinHeight="100" VerticalAlignment="Top" HorizontalAlignment="Center" Height="73" Background=""/>-->
+
+    </Grid>
+</src:CustomizablePanel>

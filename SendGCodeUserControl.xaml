@@ -1,0 +1,49 @@
+﻿<src:CustomizablePanel
+            xmlns:src="clr-namespace:Yaskawa.WPFControls;assembly=IYaskawaCNCPlugin100"
+             x:Class="Gearbox3D_Plugin.SendGCodeUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Gearbox3D_Plugin"
+             mc:Ignorable="d" FontSize="24" FontFamily="Segoe UI" FontWeight="SemiBold"
+             d:DesignHeight="1024" Loaded="CustomizablePanel_Loaded" Width="600" SnapsToDevicePixels="True">
+
+    <Grid SnapsToDevicePixels="True" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <!--<Button Content="Start Print" Click="SendButton_OnClick" MinHeight="90" MinWidth="100" MaxWidth="450" Margin="10" FontWeight="SemiBold" />-->
+
+        <ListBox Name="fileMenu" SnapsToDevicePixels="True" Grid.Row="4" Grid.ColumnSpan="2" HorizontalContentAlignment="Stretch" FontWeight="SemiBold" Background="#FFDDDDDD"
+                 SelectionMode="Extended"  Margin="20,0,20,0" Grid.RowSpan="5" Grid.Column="1" HorizontalAlignment="Stretch" Width="500" Height="400" VerticalAlignment="Top">
+            <ListBoxItem Name="file" />
+        </ListBox>
+
+        <!--<ListBox Name="FileMenu" SnapsToDevicePixels="True" Grid.Row="4" Grid.ColumnSpan="2" HorizontalContentAlignment="Stretch" FontWeight="SemiBold" Background="#FFDDDDDD"
+                 SelectionMode="Extended"  Margin="20,0,0,0" Grid.RowSpan="5" Grid.Column="1" HorizontalAlignment="Stretch" Width="500" Height="500" VerticalAlignment="Top">
+        </ListBox>-->
+
+        <!--<Button Content="Select File" Click="OpenButton_OnClick" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Margin="20,0,40,0" 
+            HorizontalAlignment="Stretch" Width="540" Height="100" VerticalAlignment="Top"/>-->
+        <Button x:Name="myButton" Content="Start Print" Click="SendButton_OnClick" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Margin="20,20,40,60" 
+                HorizontalAlignment="Stretch" Width="500" Height="100" VerticalAlignment="Top"/>
+        <TextBlock Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" Margin="20,0,20,0" HorizontalAlignment="Stretch" TextAlignment="Center" Height="100" VerticalAlignment="Top" 
+                   TextWrapping="Wrap" Background="#FFBF4242" Foreground="#FF131304"><Run/><LineBreak/><Run Text="   File Menu"/></TextBlock>
+    </Grid>
+</src:CustomizablePanel>
